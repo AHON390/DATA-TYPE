@@ -1,0 +1,16 @@
+#count the note
+amount=int(input("enter your amount : "))
+note_500=amount//500
+remaining_amount=amount%500
+note_200=remaining_amount//200
+remaining_amount=remaining_amount%200
+note_100=remaining_amount//100
+remaining_amount=remaining_amount%100
+note_50=remaining_amount//50
+remaining_amount=remaining_amount%50
+
+print("500 taka notes",note_500)
+print("200 taka notes",note_200)
+print("100 taka notes",note_100)
+print("50 taka notes",note_50)
+print("Remaining Amount",remaining_amount)
