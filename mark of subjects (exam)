@@ -1,0 +1,14 @@
+#take marks as input from user
+print("enter marks obtained in 4 subjects : ")
+MATH=int(input("Math : "))
+ENGLISH=int(input("English : "))
+Science=int(input("Science : "))
+Bangla=int(input("Bangla : "))
+
+#let's calculate the percintage of the marks
+sum=MATH+ENGLISH+Science+Bangla
+print("sum of Math,English,Science,Bangla")
+perc=(sum/400)*100
+
+print(end="percentage of marks = ")
+print(perc)
