@@ -1,0 +1,26 @@
+age=12
+if age<=14:
+    print("ahon")
+print("uncle")
+
+num=int(input("enter youyr number negative or possitive : "))
+if num<0:
+    print("negative number",num)
+if num>0:
+    print("possitive number",num)
+
+actual_cost=float(input("enter your Actual Cost: "))
+sale_cost=float(input("enter your sale Cost: "))
+
+if sale_cost>actual_cost:
+    profit=sale_cost-actual_cost
+    print("your profit is: ",profit )
+else:
+    loss=actual_cost-sale_cost
+    print("your loss is: ",loss)
+
+num=int(input("enter your number: "))
+if num%2==0:
+        print("the number is even",num)
+else:
+        print("the number is odd",num)
