@@ -1,0 +1,29 @@
+season=int(input("enter your number of month: "))
+if season==12:
+    print("now the season is winter")
+if season==1:
+    print("now the season is winter")
+if season==2:
+    print("now the season is winter")
+if  season==3:
+    print("now the season is spring")
+if season==4:
+    print("now the seoson is spring")
+
+if season==5:
+    print("now is summer")
+if season==6:
+     print("now is summer")
+if season==7:
+    print("now the season is rainy season")
+if season== 8:
+    print("now the season is rainy season")
+if season==9:
+    print("now the seaoson is autumn")
+if season==10:
+    print("now the season is autumn")
+if season==11:
+    print("now the season is late autumn")
+if season==12:
+    print("now the season is late autumn")
+    
