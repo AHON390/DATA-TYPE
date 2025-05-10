@@ -1,0 +1,71 @@
+'''
+num=int(input("enter number: "))
+if num>0:
+    if num%2==0:
+        print("the number is possitive and even")
+    else:
+        print("the number is possitive and odd")
+else:
+     if num%2==0:
+         print("the number is negative and even")
+     else:
+         print("the number is negative and odd")
+'''
+'''
+medical_cause=input("did you have a medical cause y or n : ")
+atten=int(input("enter the attendence of student : "))
+
+if medical_cause== "y":
+    print("you are allowed")
+else:
+    if atten>75:
+        print("allowed")
+    else:
+        print("not allowed")
+'''
+'''
+unit=float(input("enter your unit: "))
+if unit<100:
+    totalbill=unit*4+50
+    print("totalbill : ",totalbill)
+elif unit<200:
+    totalbill=unit*8+50
+    print("totalbill : ",totalbill)
+elif unit<300:
+    totalbill=unit*16+50
+    print("totalbill : ",totalbill)
+elif unit<400:
+    totalbill=unit*20+50
+    print("totalbill : ",totalbill)
+'''
+print("select your ride : ")
+print("1.bike")
+print("2.car")
+
+choice_int=int(input("enter your choice: "))
+if choice == 1:
+print("what type of bike ?")
+print("1.scooter\n")
+print("2.scooty\n")
+choice_2 = int(input("enter your choice: "))
+if choice_2 == 1:
+    print("you have selected scooter")
+else:
+    print("you have selected scooty")
+if choice == 1:
+print("what type of bike ?")
+print("1.scooter\n")
+print("2.scooty\n")
+choice_2 = int(input("enter your choice: "))
+if choice_2 == 1:
+    print("you have selected scooter")
+else:
+    if choice == 2:
+        print("what type of car ?")
+    print("1.bmw\n")
+    print("2.farari\n")
+    choice_2 = int(input("enter your choice: "))
+    if choice_2 == 1:
+        print("you have selected bmw")
+    else:
+        print("you have selected farari")
