@@ -1,0 +1,9 @@
+char=(input("Enter single characters : "))
+if char.isalpha():
+    print("It is an alphabet")
+elif char.isdigit():
+    print("it is a number")
+elif char.isalnum():
+    print("its alphanumeric")
+else:
+    print("its neither alphabet,number nor alphanumeric ")
