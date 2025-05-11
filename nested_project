@@ -1,0 +1,17 @@
+print("Are you student of my class ?")
+
+answer=(input("enter your answer:  "))
+if answer=="yes" or answer=="yess":
+    print("what is your name ?\n")
+    print("what is your age ?\n")
+elif answer=="no":
+    print("you are not allowed in the class.")
+
+your_name=(input("enter your name: "))
+your_age=(int(input("enter your age: ")))
+
+if your_age>=10 and your_age<20:
+    print(f"your name is {your_name} and your age is {your_age}.")
+    print("you are successfully allowed in the class.")
+else:
+    print("you are not allowed in the class.")
