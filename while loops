@@ -1,0 +1,46 @@
+'''
+i=3
+sum=0
+while i<=17:
+    sum=sum+i
+    i=i+2
+    print(sum)
+'''
+'''
+while True:
+    user_input=input("type  exit to stop: ")
+    if user_input.lower()=="exit":
+        break
+    print("your output is: ",user_input)
+
+'''
+'''
+num=int(input("enter your number: "))
+sum=0
+temp=sum
+while temp>0:
+    digit =temp%10
+    sum+=digit**3
+    temp//=10
+if num==sum:
+    print(num,"is an armtrong number")
+else:
+    print(num,"is not an armtrong number")
+'''
+'''
+password='dark1234'
+attempts=5
+while attempts>0:
+    pass1=input("enter your password: ")
+    if pass1==password:
+        print("access granted")
+        break
+    else:
+        attempts==1
+        print("wrong password")
+if attempts==0:
+    print("access denied . try after 30 minutes.")
+'''
+i=0
+while i<=0:
+    print("i will be good")
