@@ -1,0 +1,14 @@
+#continues ratio
+r1=int(input("enter your number of ration: "))
+r2=int(input("enter your number of ration: "))
+r3=int(input("enter your number of ration: "))
+r4=int(input("enter your number of ration: "))
+
+s=r1*r3
+s1=r2*r3
+print(f"first ratio={s}:{s1}")
+s2=r3*r2
+s3=r4*r2
+print(f"secound ratio={s2}:{s3}")
+
+print(f"your Continuous ratio={s}:{s1}:{s3}")
