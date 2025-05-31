@@ -1,0 +1,62 @@
+'''
+def display():
+    print('ahon')
+display()
+'''
+'''
+def student(name,age,school):
+    print("name:",name)
+    print("age:",age)
+    print('school',school)
+student('ahon',14,'modern high school')
+'''
+'''
+account_balance=1000
+def check_balance():
+    print(f"enter your current balance is:",account_balance)
+def deposite(amount):
+    global account_balance
+    if amount>0:
+        account_balance=amount
+        print("deposite amount is:",account_balance)
+        check_balance()
+    else:
+        print("deposite amount must be positive")
+def withdarw(amount):
+    global account_balance
+    if amount>account_balance:
+        print("insuficient balance")
+    elif amount<=0:
+        print("amount shuold positive")
+    else:
+        account_balance=amount
+        print(f"withdrawn successfuly.your current balance is {account_balance}")
+check_balance()
+deposite(1200)
+withdarw(500)
+'''
+'''
+def weather_condition():
+    print("the weather is pleasent in:",spring)
+    print("the weather is same in:",autumn)
+spring="autumn"
+autumn=spring
+weather_condition()
+'''
+def sum(x,y):
+    add=x+y
+    return add
+def sub(x,y):
+    sub=x-y
+    return sub
+x=int(input("enter value:"))
+y=int(input("enter your value:"))
+print("1.additoin\n")
+print("2.substraction\n")
+value=input("enter your chjoice: ")
+if value=="1":
+    result=sum(x,y)
+    print("the result is:",result)
+if value=="2":
+    result=sub(x,y)
+    print("the result is:",result)
