@@ -1,0 +1,6 @@
+def circumfarence(pi,r):
+    formula=2*pi*r
+pi=float(input("enter your value1:"))
+r=int(input("enter your value2:"))
+formula=2*pi*r
+print("the result of circufarence is:",formula)
