@@ -1,0 +1,33 @@
+'''
+def greet(name,messege="hi"):
+    return f"{messege}! {name}"
+
+greeting=greet("ahon")
+print(greeting)
+'''
+'''
+def total_calc(bill_amount,tip_perc):
+    total=bill_amount*(1+0.001*tip_perc)
+    total=round(total,2)
+    print(f"please pay ${total}")
+total_calc(150,20)
+'''
+'''
+def cube(number):
+    return number*number
+def by_two(n):
+    if n%3==0:
+        return cube(n)
+    else:
+        return false
+result=by_two(3)
+print(result)
+'''
+def factorial(x):
+    '''this is factorial function'''
+    if x==0 or x==1:
+        return 1
+    else:
+        return x*factorial(x-1)
+result=factorial(5)
+print(result)
