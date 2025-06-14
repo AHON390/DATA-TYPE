@@ -1,0 +1,7 @@
+total_amount=int(input("enter your amount: "))
+payable_amount=int(input("enter your amount:"))
+due_amount=total_amount-payable_amount
+if due_amount==0:
+    print("all payment done")
+else:
+    print(f"customer paid {payable_amount}.Due amount is {due_amount}.")
