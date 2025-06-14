@@ -1,0 +1,16 @@
+try:
+    num=int(input("enter your number: "))
+    if num%2 == 0:
+        print("your age is even")
+    else:
+        print("your age is odd")
+except ZeroDivisionError:
+    print("devision zero is not allowed")
+except ValueError:
+    print("please enter numerical value: ")
+except NameError as ex:
+    print("the exception is:",ex)
+except:
+    print("some occured error")
+finally:
+    print("i will execute no matter what happen")
