@@ -1,0 +1,6 @@
+import sys
+
+# Your code here
+print("Shutting down...")
+
+sys.exit()
