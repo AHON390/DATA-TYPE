@@ -1,0 +1,45 @@
+'''
+try:
+    print(x)
+except:
+    print("somthin went wrong")
+finally:
+    print("the 'try exept' is finish)
+'''
+'''
+try:
+    age=int(input("enter your age: "))
+    if age<18:
+        raise ValueError
+    elif:
+        print("valid age")
+except ValueError:
+    print("this age isnot valid")
+'''
+'''
+try:
+    num=int(input("enter your num: "))
+    num1=int(input("enter your num: "))
+    result=num/num1
+    print("resut is: ",result)
+    print("result is: ",result1)
+except ZeroDivisionError:
+    print("devision zero is not allowed")
+except ValueError:
+    print("please enter numerical value: ")
+except NameError as ex:
+    print("the exception is:",ex)
+except:
+    print("some occured error")
+finally:
+    print("i will execute no matter what happen")
+'''
+valid = False
+while not valid:
+    try:
+        n=int(input("enter your number: "))
+        while n%2==0:
+            print("bye")
+            valid=True
+    except ValueError:
+        print("Invalid")
