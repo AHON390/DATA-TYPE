@@ -1,0 +1,50 @@
+
+'''
+ghost_rider={'username':"michael","user_id":123,'age':14}
+print(ghost_rider)
+print(ghost_rider['username'])
+ghost_rider['score']=200
+print(ghost_rider)
+ghost_rider.pop('age')
+print(ghost_rider)
+
+for item in ghost_rider:
+    print(item)
+for item in ghost_rider.values():
+    print(item)
+'''
+'''
+marks_of_number={'ahon':97,'miftahul':23,'rajveer':79}
+print("the original dictionary: "+ str(marks_of_number))
+k=2
+res=1
+for key in marks_of_number:
+    if marks_of_number[key]==k:
+        res=res+1
+print("frequently of k is:"+ str(res))
+'''
+'''
+country_code={'india':"0091",'australia':'0025'}
+print("country_code for india -")
+print(country_code.get('india','not found'))
+print("country code for zapan -")
+print(country_code.get('japan','not found'))
+'''
+game_info={
+    'player':{
+    'name':"dark",
+    'level':'590',
+    'health':113,
+    'inventory':['sword','sheild','potion']
+},
+    'player2':{
+    'name':"hyper_dip",
+    'level':'59',
+    'health':80,
+    'inventory':['sword','potion']
+}
+
+}
+for player_id,info in game_info.items():
+    for key,value in game_info.items():
+        print(f"{key}:{value}")
