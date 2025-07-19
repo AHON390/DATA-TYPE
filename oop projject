@@ -1,0 +1,9 @@
+class dog:
+    def __init__(self,the_owner_of_dog,name,age):
+        self.the_owner_of_dog = the_owner_of_dog
+        self.name=name
+        self.age=age
+details = dog('Ahon','Tommy',2)
+print('the owner of dog is:',details.the_owner_of_dog)
+print('the dog name is:',details.name)
+print('the age of dog is:',details.age)
