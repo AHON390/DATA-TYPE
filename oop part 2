@@ -1,0 +1,54 @@
+'''
+
+ class a():
+     def __init__(self):
+         self.strl = ""
+     def get_a(self):
+         self.strl = input('enter string : ')
+     def print_a(self):
+         print("result is :",self.strl.upper())
+strl = a()
+strl.get_a()
+strl.pri nt_a()
+'''
+from tkinter.font import names
+from tokenize import group
+
+'''
+class champion_league_team:
+    def __init__(self,name,group,points,goals_scored):
+        self.name=name
+        self.group=group
+        self.points=points
+        self.goals_scored=goals_scored
+        print(f'team {self.name} from group {self.group} has enterd thr chapion league')
+    def display_info(self):
+        print(f'team: {self.name}')
+        print(f'group: {self.group}')
+        print(f'points: {self.points}')
+        print(f"points {self.goals_scored}")
+    def ad_points(self,new_points):
+        self.points+=new_points
+        print(f"{self.name} earned {new_points} points.total: {self.points}")
+    def __del__(self):
+        print(f'{self.name} has been elimited from tournaments')
+team1=champion_league_team("read madrid",'a',3,5)
+team1.display_info()
+team1.add_points(3)
+'''
+'''
+tems=['real world','mancity','psg']
+for i,team in enumerate(teams,start=1):
+    print(f"{i} : {team}")
+'''
+class championship:
+    def __init__(self,name,group):
+        self.name = name
+        self.group = group
+    def display(self):
+        print(f'team {self.name} from group {self.group}')
+teams=[chapionship("real goat",'a'),
+       chapionship('mancity','b')
+]
+for idx.team in enumerate(teams.start=1):
+    print(f'{idx}: team_display')
