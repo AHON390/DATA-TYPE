@@ -1,0 +1,16 @@
+value=int(input('enter your value : '))
+v1=int(input('enter your value : '))
+v2=int(input('enter your value : '))
+v3=int(input('enter your value : '))
+v4=int(input('enter your value : '))
+sq=(value**value)
+sq1=(v1**v1)
+sq2=(v2**v2)
+sq3=(v3**v3)
+sq4=(v4**v4)
+call=sq,sq1,sq2,sq3,sq4
+for i in call:
+    if i%2 == 0:
+        print(f'there is even number: {i} ')
+    else:
+        print(f'there is odd number: {i}')
