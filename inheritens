@@ -1,0 +1,63 @@
+'''
+class dad:
+    def __init__(self,eyes,aggressive):
+        self.eyes=eyes
+        self.aggressive=aggressive
+
+    def display(self):
+        print('your eye color is : ',self.eyes)
+        print('your are aggressive is : ', self.aggressive)
+class son(dad):
+    def __init__(self,name,age,eyes,aggressive):
+        self.name=name
+        self.age=age
+        dad.__init__(self,eyes,aggressive)
+obj=son('dog',3,'black',True)
+obj.display()
+'''
+'''
+class vehicle:
+    def __init__(self,name,max_speed,mileage):
+        self.name=name
+        self.max_speed=max_speed
+        self.mileage=mileage
+class bus(vehicle):
+    pass
+school_bus = bus('school vovlvo',110,12)
+print('vehicle name:',school_bus.name,'sped:',school_bus.max_speed)
+'''
+'''
+class person(object):
+    def __init__(self,name,idnumber):
+        self.name=name
+        self.idnumber=idnumber
+    def display(self):
+        print('name:',self.name)
+        print('idnumber:', self.idnumber)
+class employee(person):
+    def __init__(self,name,idnumber,salary,post):
+        self.salary=salary
+        self.post=post
+name=input('enter your name:')
+idnumber=int(input('idnumber:'))
+salary=int(input("salary : "))
+post=input('post : ')
+
+obj=employee(name,idnumber,salary,post)
+obj.display()
+'''
+class bird:
+    def __init__(self):
+        print('bird is ready')
+    def whoisthis(self):
+        print('bird')
+    def swim(self):
+        print('swim faster')
+class penguin(bird):
+    def __init__(self):
+        super().__init__()
+        print('penguin is ready')
+    def whoisthis(self):
+        print('penguin is ready')
+peggy= penguin()
+peggy.whoisthis()
