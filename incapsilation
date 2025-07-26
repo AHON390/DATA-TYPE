@@ -1,0 +1,48 @@
+class footballplayer:
+    def __init__(self,name,team):
+        #private attribute -encapsulation
+        self.__name=name
+        self.__team=team
+        self.__goals=0
+    def get_name(self):
+        return self.__name
+    def get_team(self):
+        return self.__team
+    def get_goals(self):
+        print("Score:",self.__goals)
+        return self.__goals
+    def score_goal(self):
+        self.__goals+=1
+        print(f"{self.__name} scored a goal for {self.__team}")
+player1=footballplayer("Messi","Argentina")
+print("player: ",player1.get_name())
+print("Team: ",player1.get_team())
+print('----Goals before scoring-----: ')
+player1.get_goals()
+player1.score_goal()
+player1.score_goal()
+
+print('----Goals After scoring---: ')
+player1.get_goals()
+'''
+'''
+class computer:
+    def __init__(self):
+        self.__maxprice=900
+    def sell(self):
+        print('selling price: {}'.format(self.__maxprice))
+    def setmaxprice(self,price):
+        self.__maxprice=price
+c = computer ()
+c.sell()
+c.__maxprice = 1000
+c.sell()
+'''
+class point:
+    def __init__(self,x=0,y=0):
+        self.x=x
+        self.y=y
+    def __str__(self):
+        return "({0},{1})".format(self.x,self.y)
+p1=point(2,3)
+print(p1)
