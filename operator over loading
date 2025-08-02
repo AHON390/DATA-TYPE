@@ -1,0 +1,74 @@
+'''
+class point:
+    def __init__(self,x=0,y=0):
+        self.x=x
+        self.y=y
+    def __str__(self):
+        return "({0},{1})".format(self.x,self.y)
+    def __add__(self,other):
+        x = self.x + other.x
+        y = self.y + other.y
+        return point(x,y)
+p1=point(1,2)
+p2=point(2,3)
+print(p1+p2)
+'''
+'''
+class A:
+    def __init__(self,a):
+        self.a=a
+    def __lt__(self,other):
+        if(self.a<other.a):
+            return "ob1 is less than ob2"
+        else:
+            return "ob2 is less than ob1"
+    def __eq__(self,other):
+        if(self.a== other.a):
+            return "both are equal"
+        else:
+            return "not equal"
+ob1=A(2)
+ob2=A(3)
+print("passed values : ",ob1.a,ob2.a)
+print(ob1<ob2)
+ob3=A(4)
+ob4=A(5)
+print("passed values : ",ob3.a,ob4.a)
+print(ob3==ob4)
+'''
+import random
+
+
+class FruitQuiz:
+
+    # Create a constructor
+    def __init__(self):
+
+        # Create a dictionary of fruits as keys and color as value
+        self.fruits = {'apple': 'red',
+                       'orange': 'orange',
+                       'watermelon': 'green',
+                       'banana': 'yellow'}
+
+    # Function for the quiz, here a fruit will be chosen randomly	
+    def quiz(self):
+        while (True):
+
+            fruit, color = random.choice(list(self.fruits.items()))
+
+            print("What is the color of {}".format(fruit))
+            user_answer = input()
+
+            if (user_answer.lower() == color):
+                print("Correct answer")
+            else:
+                print("Wrong answer")
+
+            option = int(input("enter 0 , if you want to play again otherwise enter 1: "))
+            if (option):
+                break
+
+
+print("welcome to fruit quiz ")
+fq = FruitQuiz()
+fq.quiz()
