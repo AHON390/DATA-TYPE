@@ -1,0 +1,36 @@
+import pygame
+import sys
+
+# Initialize Pygame
+pygame.init()
+
+# Set up display
+screen_width = 800
+screen_height = 600
+screen = pygame.display.set_mode((screen_width, screen_height))
+pygame.display.set_caption("My First Game")
+
+# Set up colors
+WHITE = (255, 255, 255)
+BLUE = (0, 100, 255)
+
+# Set up font
+font = pygame.font.SysFont(None, 60)
+text = font.render("Welcome to My First Game!", True, WHITE)
+text_rect = text.get_rect(center=(screen_width/2, screen_height/2))
+
+# Game loop
+running = True
+while running:
+    screen.fill(BLUE)  # Fill background
+    screen.blit(text, text_rect)  # Draw text
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    pygame.display.flip()  # Update the screen
+
+# Quit Pygame
+pygame.quit()
+sys.exit()
