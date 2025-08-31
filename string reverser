@@ -1,0 +1,26 @@
+class StringReverser:
+    def _init_(self, text):
+        self.text = text
+
+    def reverse_slicing(self):
+        """Reverse using slicing."""
+        return self.text[::-1]
+
+    def reverse_loop(self):
+        """Reverse using a loop."""
+        reversed_str = ""
+        for char in self.text:
+            reversed_str = char + reversed_str
+        return reversed_str
+
+    def reverse_builtin(self):
+        """Reverse using reversed() built-in function."""
+        return "".join(reversed(self.text))
+
+
+# Example usage
+s = StringReverser("Hello World")
+
+print("Slicing Method:", s.reverse_slicing())
+print("Loop Method:", s.reverse_loop())
+print("Builtin Method:", s.reverse_builtin())
