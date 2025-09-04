@@ -1,0 +1,9 @@
+t1 = (1, 2)
+t2 = ('a', 'b')
+
+product = []
+for x in t1:
+    for y in t2:
+        product.append((x, y))
+
+print(product)
