@@ -1,0 +1,13 @@
+import math
+
+def circle_area_perimeter(radius):
+    area = math.pi * radius ** 2
+    perimeter = 2 * math.pi * radius
+    return area, perimeter
+
+# Example usage
+r = 5  # you can change this value
+area, perimeter = circle_area_perimeter(r)
+print(f"Radius: {r}")
+print(f"Area: {area:.2f}")
+print(f"Perimeter (Circumference): {perimeter:.2f}")
