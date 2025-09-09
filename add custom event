@@ -1,0 +1,73 @@
+import pygame
+import random
+import sys
+
+# Initialize Pygame
+pygame.init()
+
+# Screen setup
+WIDTH, HEIGHT = 800, 600
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Sprites with Keyboard Control and Color Change")
+
+# Clock for frame rate
+clock = pygame.time.Clock()
+
+# Rectangular sprites
+player_sprite = pygame.Rect(100, 100, 100, 100)     # Controlled by keyboard
+other_sprite = pygame.Rect(500, 300, 100, 100)       # Static
+
+# Initial colors
+player_color = (255, 0, 0)      # Red
+other_color = (0, 0, 255)       # Blue
+
+# Movement speed
+speed = 5
+
+# Custom event to change colors
+CHANGE_COLOR_EVENT = pygame.USEREVENT + 1
+pygame.time.set_timer(CHANGE_COLOR_EVENT, 2000)  # Change color every 2 seconds
+
+# Function to get random color
+def random_color():
+    return (
+        random.randint(0, 255),
+        random.randint(0, 255),
+        random.randint(0, 255)
+    )
+
+# Main loop
+running = True
+while running:
+    screen.fill((255, 255, 255))  # White background
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+        elif event.type == CHANGE_COLOR_EVENT:
+            player_color = random_color()
+            other_color = random_color()
+
+    # Handle keyboard input
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:
+        player_sprite.x -= speed
+    if keys[pygame.K_RIGHT]:
+        player_sprite.x += speed
+    if keys[pygame.K_UP]:
+        player_sprite.y -= speed
+    if keys[pygame.K_DOWN]:
+        player_sprite.y += speed
+
+    # Draw sprites
+    pygame.draw.rect(screen, player_color, player_sprite)
+    pygame.draw.rect(screen, other_color, other_sprite)
+
+    # Update display
+    pygame.display.flip()
+    clock.tick(60)  # 60 frames per second
+
+# Quit
+pygame.quit()
+sys.exit()
