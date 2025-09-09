@@ -1,0 +1,58 @@
+import pygame
+import sys
+
+# Initialize Pygame
+pygame.init()
+
+# Set screen size
+WIDTH, HEIGHT = 800, 600
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Rectangular Sprites Control")
+
+# Set colors
+WHITE = (255, 255, 255)
+BLUE = (0, 0, 255)
+RED = (255, 0, 0)
+
+# Clock for frame rate
+clock = pygame.time.Clock()
+
+# Define rectangles (sprites)
+player_rect = pygame.Rect(100, 100, 60, 60)  # Controlled sprite
+static_rect = pygame.Rect(400, 300, 60, 60)  # Static sprite
+
+# Movement speed
+speed = 5
+
+# Game loop
+running = True
+while running:
+    screen.fill(WHITE)
+
+    # Handle events
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    # Get keys
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:
+        player_rect.x -= speed
+    if keys[pygame.K_RIGHT]:
+        player_rect.x += speed
+    if keys[pygame.K_UP]:
+        player_rect.y -= speed
+    if keys[pygame.K_DOWN]:
+        player_rect.y += speed
+
+    # Draw rectangles
+    pygame.draw.rect(screen, BLUE, player_rect)   # Movable sprite
+    pygame.draw.rect(screen, RED, static_rect)    # Static sprite
+
+    # Update display
+    pygame.display.flip()
+    clock.tick(60)  # Limit to 60 FPS
+
+# Quit
+pygame.quit()
+sys.exit()
